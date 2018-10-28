@@ -5,17 +5,17 @@
   
 
   
-  <title>Hexo</title>
+  <title>Nucc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Nucc">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Nucc">
 <meta property="og:locale" content="default">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Nucc">
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Nucc" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -34,7 +34,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
+        <a href="/" id="logo">Nucc</a>
       </h1>
       
     </div>
@@ -88,7 +88,7 @@
 <h2 id="将记录一个小菜鸡的成长"><a href="#将记录一个小菜鸡的成长" class="headerlink" title="将记录一个小菜鸡的成长"></a>将记录一个小菜鸡的成长</h2><h3 id="说来话长，一把辛酸泪，可算是弄好了。"><a href="#说来话长，一把辛酸泪，可算是弄好了。" class="headerlink" title="说来话长，一把辛酸泪，可算是弄好了。"></a>说来话长，一把辛酸泪，可算是弄好了。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">本来一直想大一就建立一个博客，没想到的是，我在大二才建了这样的个人博客，这次终于可以很难勉勉强强的对学长们说：</span><br><span class="line">诺，欢迎来到我的博客小屋，如果你想了解我，那么请你翻到底吧，（kidding.gif）</span><br></pre></td></tr></table></figure>
 <p>逗比的话，就那么点，生活中的我也是很逗比，但是更是一个爱学向上的骚年，闷骚而不失态。</p>
 <p>More info: [国外github地址](<a href="http://www.github.com）" target="_blank" rel="noopener">http://www.github.com）</a></p>
-<h3 id="开始干活。"><a href="#开始干活。" class="headerlink" title="开始干活。"></a>开始干活。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">有趣的灵魂+好看的皮囊。</span><br></pre></td></tr></table></figure>
+<h3 id="开始干活。"><a href="#开始干活。" class="headerlink" title="开始干活。"></a>开始干活。</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">有趣的灵魂+好看的皮囊。（记住再看）</span><br><span class="line">/*</span><br><span class="line">*测试</span><br><span class="line">*/</span><br><span class="line">游标的创建以及使用：</span><br><span class="line">create procedure precssorders()</span><br><span class="line">begin</span><br><span class="line"><span class="built_in">declare</span> <span class="keyword">done</span> boolean default 0;</span><br><span class="line"><span class="built_in">declare</span> t decimal(10,2);</span><br><span class="line"><span class="built_in">declare</span> o int;</span><br><span class="line"><span class="built_in">declare</span> ordernumbers cursor <span class="keyword">for</span> select ID from stard;</span><br><span class="line"><span class="built_in">declare</span> <span class="built_in">continue</span> handler <span class="keyword">for</span> sqlstate <span class="string">'02000'</span> <span class="built_in">set</span> <span class="keyword">done</span>=1;//判断游标是否到达了表格的最后一行；</span><br><span class="line">open ordernumbers;</span><br><span class="line">repeat//此处不可有‘；’</span><br><span class="line">fetch ordernumbers into o;</span><br><span class="line">call p_ddd(o,t);//召唤创建的储存；</span><br><span class="line">insert into p_ddd values(o,t);</span><br><span class="line">until <span class="keyword">done</span> 此处不可有‘；’</span><br><span class="line">end repeat;</span><br><span class="line">close ordernumbers;</span><br><span class="line">select * from p_ddd;</span><br><span class="line">end $$</span><br><span class="line">create procedure precssorders()</span><br><span class="line">begin</span><br><span class="line"><span class="built_in">declare</span> <span class="keyword">done</span> boolean default 0;</span><br><span class="line"><span class="built_in">declare</span> t decimal(10,2);</span><br><span class="line"><span class="built_in">declare</span> o int;</span><br><span class="line"><span class="built_in">declare</span> ordernumbers cursor <span class="keyword">for</span> select ID from stard;</span><br><span class="line"><span class="built_in">declare</span> <span class="built_in">continue</span> handler <span class="keyword">for</span> sqlstate <span class="string">'02000'</span> <span class="built_in">set</span> <span class="keyword">done</span>=1;</span><br><span class="line">open ordernumbers;</span><br><span class="line">repeat</span><br><span class="line">fetch ordernumbers into o;</span><br><span class="line">call p_ddd(o,t);</span><br><span class="line">insert into p_ddd values(o,t);</span><br><span class="line">until <span class="keyword">done</span> </span><br><span class="line">end repeat;</span><br><span class="line">close ordernumbers;</span><br><span class="line">select * from p_ddd;</span><br><span class="line">end $$</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="http://image.baidu.com/search/detail?ct=503316480&amp;z=0&amp;ipn=d&amp;word=%E9%9A%86%E7%BE%8E%E5%B0%94&amp;step_word=&amp;hs=0&amp;pn=18&amp;spn=0&amp;di=36079076770&amp;pi=0&amp;rn=1&amp;tn=baiduimagedetail&amp;is=0%2C0&amp;istype=0&amp;ie=utf-8&amp;oe=utf-8&amp;in=&amp;cl=2&amp;lm=-1&amp;st=undefined&amp;cs=2295042227%2C3880365422&amp;os=1367910488%2C3517895483&amp;simid=137847076%2C862066302&amp;adpicid=0&amp;lpn=0&amp;ln=1918&amp;fr=&amp;fmq=1540720931507_R&amp;fm=&amp;ic=undefined&amp;s=undefined&amp;se=&amp;sme=&amp;tab=0&amp;width=&amp;height=&amp;face=undefined&amp;ist=&amp;jit=&amp;cg=&amp;bdtype=0&amp;oriquery=&amp;objurl=http%3A%2F%2Fpic.ikafan.com%2Fimgp%2FL3Byb3h5L2h0dHAvaW1hZ2UxMDkuMzYwZG9jLmNvbS9Eb3dubG9hZEltZy8yMDE3LzA4LzE0MTYvMTA4NDAwNDQ0XzY%3D.jpg&amp;fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bvvnmd_z%26e3Bv54AzdH3Fv5gpjgpAzdH3FoPld5Y4g8c_z%26e3Bip4s&amp;gsm=0&amp;rpstart=0&amp;rpnum=0&amp;islist=&amp;querylist=" target="_blank" rel="noopener">伙计</a></p>
 <h3 id="博客搭建参考"><a href="#博客搭建参考" class="headerlink" title="博客搭建参考"></a>博客搭建参考</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">（一）浩阳神：https://gaohaoyang.github.io/</span><br><span class="line">（二）Devin哟神：http://www.jianshu.com/p/f389ad8c49bd</span><br><span class="line">（三）BYQiu神:http://www.jianshu.com/p/e68fba58f75c</span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
