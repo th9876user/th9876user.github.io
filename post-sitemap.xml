@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>http://www.huweihuang.com/article/hexo-theme-huweihuang/</loc>
+        <lastmod>2018-11-02T00:16:49.829Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://www.huweihuang.com/article/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-hexo+github%E5%8D%9A%E5%AE%A2/</loc>
         <lastmod>2018-11-01T23:42:56.258Z</lastmod>
         <changefreq>weekly</changefreq>
