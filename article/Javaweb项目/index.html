@@ -140,21 +140,21 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/archive/">往期内容</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/tags/">文章标签</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/about/">关于</a>
                         </li>
                         
                     
@@ -218,14 +218,14 @@
 <h3 id="图书商城项目需求分析">图书商城项目需求分析</h3>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>导入前端原型</span><br><span class="line">功能分析</span><br><span class="line"><span class="meta"> &gt;</span>前台</span><br><span class="line">  用户模块：</span><br><span class="line">  注册</span><br><span class="line">  激活</span><br><span class="line">  登录</span><br><span class="line">  退出</span><br><span class="line">  查看所有分类</span><br><span class="line">  图书模块：</span><br><span class="line">   查询所有图书</span><br><span class="line">   按分类查询图书</span><br><span class="line">   查询图书详细（按id查）</span><br><span class="line">   购物车模块：</span><br><span class="line">   添加购物车条目；</span><br><span class="line">   清空所有条目；</span><br><span class="line">   删除指定条目；</span><br><span class="line"> 我的购物车（按用户查询购物车）</span><br><span class="line">  订单模块：</span><br><span class="line">  生成订单；</span><br><span class="line">  我的订单（按用户查询订单）</span><br><span class="line">  按id查询订单</span><br><span class="line">  确认收货</span><br><span class="line">  付款功能（只是跳转到银行页面）</span><br><span class="line">  付款回调功能（由银行来调用我们这个方法，表示用户已经付款成功）</span><br><span class="line">  后台：</span><br><span class="line">  管理员：</span><br><span class="line">   登录</span><br><span class="line">    分类管理：</span><br><span class="line">    添加分类</span><br><span class="line">    查看所有分类</span><br><span class="line">    删除分类</span><br><span class="line">    按id查询</span><br><span class="line">    修改分类</span><br><span class="line">   图书管理（我的）</span><br><span class="line">    查看所有图书</span><br><span class="line">    按id查询</span><br><span class="line">    删除图书</span><br><span class="line">    修改图书</span><br><span class="line">    添加图书（上传图片）</span><br><span class="line">  订单模块</span><br><span class="line">    查询所有订单</span><br><span class="line">    按状态查询订单</span><br><span class="line">    发货</span><br></pre></td></tr></table></figure>
 <h3 id="数据库表">数据库表</h3>
-<p><img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt="数据库表"></p>
+<p><img src="_posts%5CJavaWeb2-imag.png" alt="数据库表"></p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">数据库表的建立</span><br><span class="line">tb_user</span><br><span class="line">category</span><br><span class="line">book</span><br><span class="line">orders</span><br><span class="line">orderitem</span><br></pre></td></tr></table></figure>
 <h1 id="项目分析">项目分析</h1>
 <p>Nucc Blog : <a href="https://th9876user.github.io/" target="_blank" rel="noopener">https://th9876user.github.io/</a><br>
-前台页面: <img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt="cc.toget"></p>
+前台页面: <img src="_posts%5CJavaWeb2-imag.png" alt="cc.toget"></p>
 <h2 id="项目类">项目类</h2>
 <h3 id="用简单的mvc框架">用简单的MVC框架</h3>
-<p><img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt=""></p>
+<p><img src="_posts%5CJavaWeb2-imag.png" alt=""></p>
 <blockquote>
 <p>domain:实体类层(具体类)<br>
 servlet:直接连接jsp页面<br>
@@ -245,12 +245,12 @@ Dao:直接连接数据库</p>
 <blockquote>
 <p>用户的邮件中 --&gt; UserServlet#active() --&gt; msg.jsp</p>
 </blockquote>
-<p>###用户登录</p>
+<h3 id="用户登录">用户登录</h3>
 <h4 id="流程">流程</h4>
 <blockquote>
 <p>/jsps/user/login.jsp --&gt; UserServlet#login() --&gt; index.jsp</p>
 </blockquote>
-<p>###用户退出</p>
+<h3 id="用户退出">用户退出</h3>
 <h4 id="流程">流程</h4>
 <blockquote>
 <p>top.jsp à UserServlet#quit() à login.jsp<br>
@@ -266,12 +266,12 @@ quit()：把session销毁！</p>
 <li>service：CategoryService</li>
 <li>web.servlet：CategoryServlet</li>
 </ul>
-<p>###查询所有分类</p>
+<h3 id="查询所有分类">查询所有分类</h3>
 <h4 id="流程">流程</h4>
 <blockquote>
 <p>main.jsp --&gt; CategoryService#findAll() --&gt; left.jsp</p>
 </blockquote>
-<p>##图书模块</p>
+<h2 id="图书模块">图书模块</h2>
 <h3 id="创建相关类">创建相关类</h3>
 <blockquote></blockquote>
 <ul>
@@ -281,7 +281,7 @@ quit()：把session销毁！</p>
 <li>service :BookService</li>
 <li>web.servle：BookServlet</li>
 </ul>
-<p>###查询所有图书</p>
+<h3 id="查询所有图书">查询所有图书</h3>
 <h4 id="流程">流程</h4>
 <blockquote>
 <p>left.jsp（全部分类）–&gt; BookServlet#findAll() --&gt; /jsps/book/list.jsp</p>
@@ -292,7 +292,7 @@ quit()：把session销毁！</p>
 <p>left.jsp --&gt; BookServlet#findByCategory() --&gt; list.jsp</p>
 </blockquote>
 <h3 id="查询详细信息加载">查询详细信息（加载）</h3>
-<p>####流程</p>
+<h4 id="流程">流程</h4>
 <blockquote>
 <p>list.jsp（点击某一本书） --&gt; BookServlet#load() --&gt; desc.jsp</p>
 </blockquote>
@@ -314,7 +314,7 @@ quit()：把session销毁！</p>
 <li>service：CartService</li>
 <li>web.servlet：CartServlet</li>
 </ul>
-<p>####流程页面</p>
+<h4 id="流程页面">流程页面</h4>
 <blockquote>
 <p>/jsps/cart/list.jsp</p>
 </blockquote>
@@ -330,9 +330,9 @@ quit()：把session销毁！</p>
 <blockquote>
 <p>/jsps/cart/list.jsp --&gt; 删除 --&gt; CartSerrvlet#delete()–&gt;/jsps/cart/list.jsp</p>
 </blockquote>
-<p>####我的购物车</p>
+<h4 id="我的购物车">我的购物车</h4>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">top.jsp中存在一个链接：我的购物车</span><br><span class="line">我的购物车直接访问/jsps/cart/list.jsp，它会显示数据库中车的所有条目</span><br></pre></td></tr></table></figure>
-<p>##订单模块</p>
+<h2 id="订单模块">订单模块</h2>
 <h3 id="创建相关类">创建相关类</h3>
 <blockquote></blockquote>
 <ul>
@@ -343,37 +343,37 @@ quit()：把session销毁！</p>
 <li>service：OrderService</li>
 <li>web.servlete：OrderServlet</li>
 </ul>
-<p>###生成订单<br>
-<img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt="add"></p>
-<p>###我的订单（按用户查）<br>
-<img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt="add"></p>
-<p>###加载订单（按id查）</p>
-<p><img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt="add"><br>
-###确认收货<br>
-<img src="C:%5CUsers%5Cdell%5CDesktop%5Cblog%5Csource_posts%5CJavaWeb2-imag.png" alt="add"><br>
-###支付</p>
+<h3 id="生成订单">生成订单</h3>
+<p><img src="_posts%5CJavaWeb2-imag.png" alt="add"></p>
+<h3 id="我的订单按用户查">我的订单（按用户查）</h3>
+<p><img src="_posts%5CJavaWeb2-imag.png" alt="add"></p>
+<h3 id="加载订单按id查">加载订单（按id查）</h3>
+<p><img src="_posts%5CJavaWeb2-imag.png" alt="add"></p>
+<h3 id="确认收货">确认收货</h3>
+<p><img src="_posts%5CJavaWeb2-imag.png" alt="add"></p>
+<h3 id="支付">支付</h3>
 <h4 id="易宝支付">易宝支付</h4>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">在线支付的两种形式：</span><br><span class="line">1.  电商与银行直连！</span><br><span class="line">* 安全</span><br><span class="line">* 不收手续费</span><br><span class="line">* 不与小电商合作！</span><br><span class="line"></span><br><span class="line">2.  第三台支付平台</span><br><span class="line">* 支付宝</span><br><span class="line">* 易宝</span><br><span class="line">* 财富通</span><br><span class="line">好处：</span><br><span class="line">* 不安全</span><br><span class="line">* 收手续费（1%）</span><br><span class="line">* 小电商可以与其合作！</span><br><span class="line"></span><br><span class="line">需要在第三方注册账户</span><br><span class="line">* 需要认证！</span><br><span class="line">* 网上可以找到公共账户，所以测试金额在0.01元</span><br></pre></td></tr></table></figure>
-<p>####易宝支付<br>
-#####去银行</p>
+<h4 id="易宝支付">易宝支付</h4>
+<h5 id="去银行">去银行</h5>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">* 易宝给了我们一个网址（支付网关），重定向到这个地址即可！</span><br><span class="line">* 还需要给这个地址后添加13+1个参数！</span><br><span class="line">https://www.yeepay.com/app-merchant-proxy/node?p0_Cmd=Buy&amp;p1_MerId=10001126856&amp;p2_Order=123456&amp;p3_Amt=1234.56&amp;p4_Cur=CNY&amp;p5_Pid=&amp;p6_Pcat=&amp;p7_Pdesc=&amp;p8_Url=http://localhost:8080/bookstore/OrderServlet?method=back&amp;p9_SAF=&amp;pa_MP=&amp;pd_FrpId= ICBC-NET-B2C&amp;pr_NeedResponse=1&amp;hmac=dd17580a3ca176ba62d6d348583ba88b</span><br><span class="line"></span><br><span class="line">* 易宝回调：</span><br><span class="line">* 点对点：易宝直接访问电商，这里没有客户端什么事了。</span><br><span class="line">* 这种方式是必须要使用的，我们这种方式是收不到的！因为我们没有固定IP</span><br><span class="line">* 易宝有一个重发机制，如果它访问你，你不给它回信息，它会一直重发！</span><br><span class="line">* 电商需要返回一个以SUCCESS开头的字符串即可！</span><br><span class="line">* 引导客户端浏览器重定向到电商。是让客户端访问电商！</span><br><span class="line">* 可以不使用的！</span><br><span class="line"></span><br><span class="line">* hmac：13参数值+keyValue(密钥) + 算法(md5)</span><br><span class="line">* 13参数值：自己设置的！</span><br><span class="line">* keyValue：易宝在我们注册后发给我们的，这个东东只有我们和易宝知道！</span><br><span class="line">* 底层为md5的算法：PaymentUtil.buildHmac(14个)，它返回hmac</span><br></pre></td></tr></table></figure>
-<p>#####支付（去银行）</p>
+<h5 id="支付去银行">支付（去银行）</h5>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 重定向！</span><br><span class="line">* 13+1个参数！</span><br></pre></td></tr></table></figure>
-<p>#####支付（银行回馈）</p>
+<h5 id="支付银行回馈">支付（银行回馈）</h5>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">* 校验访问者是否为易宝</span><br><span class="line">* 修改订单的状态</span><br></pre></td></tr></table></figure>
-<p>#后台</p>
+<h1 id="后台">后台</h1>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">后台的内容，必须要设置权限！</span><br><span class="line">用户可以访问一个网站的哪些内容？</span><br><span class="line">* dao：不行</span><br><span class="line">* service：不行</span><br><span class="line">* servlet：能！</span><br><span class="line">* jsp：能！</span><br><span class="line">　　用户可以访问的只有WEB层！</span><br></pre></td></tr></table></figure>
-<p>##分类管理</p>
+<h2 id="分类管理">分类管理</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* 分类管理：</span><br><span class="line">* 添加分类</span><br><span class="line">* 查看所有分类</span><br><span class="line">* 删除分类</span><br><span class="line">* 按id查询</span><br><span class="line">* 修改分类</span><br></pre></td></tr></table></figure>
-<p>###相关类创建</p>
+<h3 id="相关类创建">相关类创建</h3>
 <blockquote></blockquote>
 <ul>
 <li>domain：Category</li>
 <li>dao：CategoryDao</li>
 <li>service：CategoryService</li>
-<li>admin.web.servlet：AdminCategoryServlet（为管理员提供单独的Servlet，然后给这个Servlet添加过滤器！）<br>
-###查看所有分类</li>
+<li>admin.web.servlet：AdminCategoryServlet（为管理员提供单独的Servlet，然后给这个Servlet添加过滤器！）</li>
 </ul>
+<h3 id="查看所有分类">查看所有分类</h3>
 <blockquote></blockquote>
 <ul>
 <li>left.jsp上的菜单修改一下指向：AdminCategoryServlet#findAll()</li>
@@ -382,7 +382,7 @@ quit()：把session销毁！</p>
 <li>保存到request域，转发到/adminjsps/admin/category/list.jsp</li>
 <li>list.jsp：修改页面，显示所有分类！</li>
 </ul>
-<p>###添加分类</p>
+<h3 id="添加分类">添加分类</h3>
 <blockquote></blockquote>
 <ul>
 <li>add.jsp（表单页面）à</li>
@@ -394,7 +394,7 @@ quit()：把session销毁！</p>
 <li>service#add(Category c)：略</li>
 <li>dao#add(Catetgory c)：略</li>
 </ul>
-<p>###删除分类</p>
+<h3 id="删除分类">删除分类</h3>
 <blockquote></blockquote>
 <ul>
 <li>list.jsp（删除链接） à</li>
@@ -405,9 +405,9 @@ quit()：把session销毁！</p>
 <li>调用findAll()</li>
 <li>service#delete(String cid)：</li>
 <li>通过cid查看该分类下的图书本数，如果大于0，抛出异常；</li>
-<li>如果等于0，删除该分类；<br>
-###修改分类</li>
+<li>如果等于0，删除该分类；</li>
 </ul>
+<h3 id="修改分类">修改分类</h3>
 <blockquote></blockquote>
 <p>修改分为两步：1、加载分类，　2、修改分类<br>
 第一步：加载分类</p>
@@ -425,25 +425,25 @@ quit()：把session销毁！</p>
 <li>调用service方法完成修改工作</li>
 <li>调用findAll()</li>
 </ul>
-<p>##图书管理</p>
+<h2 id="图书管理">图书管理</h2>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">* 图书管理（我的）</span><br><span class="line">* 查看所有图书</span><br><span class="line">* 按id查询</span><br><span class="line">* 删除图书</span><br><span class="line">* 修改图书</span><br><span class="line">* 添加图书（上传图片）</span><br></pre></td></tr></table></figure>
-<p>###相关类创建</p>
+<h3 id="相关类创建">相关类创建</h3>
 <blockquote></blockquote>
 <ul>
 <li>web.servlet.admin：</li>
 <li>AdminBookServlet；</li>
-<li>AdminAddBookServlet（添加图书，包含上传）：上传不能使用BaseServlet，因为BaseServlet中需要使用getParameter()方法，而上传getParameter()方法就不能再使用了。<br>
-###查询所有图书</li>
+<li>AdminAddBookServlet（添加图书，包含上传）：上传不能使用BaseServlet，因为BaseServlet中需要使用getParameter()方法，而上传getParameter()方法就不能再使用了。</li>
 </ul>
+<h3 id="查询所有图书">查询所有图书</h3>
 <blockquote></blockquote>
 <ul>
 <li>left.jsp（菜单项（查看图书链接））à</li>
 <li>AdminBookServlet#findAll()</li>
 <li>查询所有图书，保存到request</li>
 <li>转发到/adminjsps/admin/book/list.jsp</li>
-<li>list.jsp：循环遍历所有图书<br>
-###加载图书</li>
+<li>list.jsp：循环遍历所有图书</li>
 </ul>
+<h3 id="加载图书">加载图书</h3>
 <blockquote></blockquote>
 <ul>
 <li>list.jsp（点击图名或图片） à</li>
@@ -452,7 +452,7 @@ quit()：把session销毁！</p>
 <li>保存到request中，转发到/adminjsps/admin/book/desc.jsp</li>
 <li>desc.jsp：把当前book对象显示到表单中</li>
 </ul>
-<p>###添加图书</p>
+<h3 id="添加图书">添加图书</h3>
 <blockquote></blockquote>
 <p>添加图书分两步：</p>
 <ol>
@@ -466,7 +466,7 @@ quit()：把session销毁！</p>
 </ul>
 <blockquote></blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> 添加图书所需要的</span><br><span class="line">* 上传三步：</span><br><span class="line">* 创建工厂</span><br><span class="line">* 创建解析器</span><br><span class="line">* 解析request得到表单字段！</span><br><span class="line">* 把表单字段封装到Book对象中</span><br><span class="line">* 保存上传文件，把保存的路径设置给Book的image属性。</span><br><span class="line">* 调用service方法保存Book对象到数据库中</span><br><span class="line">* 调用findAll()</span><br></pre></td></tr></table></figure>
-<p>###删除图书</p>
+<h3 id="删除图书">删除图书</h3>
 <blockquote></blockquote>
 <p>book表与orderitem有关联关系！<br>
 删除图书不是真的数据库表中删除记录，而是给book表添加一个del字段，它是booleanod类型，表示是否已删除！<br>
@@ -478,7 +478,7 @@ quit()：把session销毁！</p>
 删除图书：其实就是把表的del列修改为true！</li>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* desc.jsp（del按钮） </span><br><span class="line">* AdminBookServlet<span class="comment">#del()</span></span><br><span class="line">* 获取bid</span><br><span class="line">* 调用service方法完成删除</span><br><span class="line">* 返回列表，即调用findAll()</span><br></pre></td></tr></table></figure>
-<p>###编辑图书</p>
+<h3 id="编辑图书">编辑图书</h3>
 <blockquote></blockquote>
 <ul>
 <li>dsec.jsp（编辑按钮） à</li>
@@ -579,7 +579,7 @@ Nucc 分享的javaweb项目。
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#项目需求分析"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x9879;&#x76EE;&#x9700;&#x6C42;&#x5206;&#x6790;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#图书商城项目需求分析"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">&#x56FE;&#x4E66;&#x5546;&#x57CE;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x5206;&#x6790;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#数据库表"><span class="toc-nav-number">1.0.2.</span> <span class="toc-nav-text">&#x6570;&#x636E;&#x5E93;&#x8868;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#项目分析"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x9879;&#x76EE;&#x5206;&#x6790;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#项目类"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">&#x9879;&#x76EE;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用简单的mvc框架"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">&#x7528;&#x7B80;&#x5355;&#x7684;MVC&#x6846;&#x67B6;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#用户模块"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户模块的相关类创建"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6A21;&#x5757;&#x7684;&#x76F8;&#x5173;&#x7C7B;&#x521B;&#x5EFA;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户注册"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6CE8;&#x518C;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程jspsuserregistjsp-gt-userservletregistgt-msgjsp"><span class="toc-nav-number">2.2.2.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;&#xFF1A;/jsps/user/regist.jsp --&gt; UserServlet#regist()&#x2013;&gt; msg.jsp</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#页面jsp"><span class="toc-nav-number">2.2.2.1.1.</span> <span class="toc-nav-text">&#x9875;&#x9762;(jsp)&#xFF1A;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户激活"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6FC0;&#x6D3B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.2.3.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.2.3.2.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.2.3.3.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#分类模块"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">&#x5206;&#x7C7B;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#分类模块的相关类创建"><span class="toc-nav-number">2.3.1.</span> <span class="toc-nav-text">&#x5206;&#x7C7B;&#x6A21;&#x5757;&#x7684;&#x76F8;&#x5173;&#x7C7B;&#x521B;&#x5EFA;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.3.1.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建相关类"><span class="toc-nav-number">2.3.2.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;&#x76F8;&#x5173;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.3.2.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#按分类查询图书"><span class="toc-nav-number">2.3.3.</span> <span class="toc-nav-text">&#x6309;&#x5206;&#x7C7B;&#x67E5;&#x8BE2;&#x56FE;&#x4E66;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.3.3.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询详细信息加载"><span class="toc-nav-number">2.3.4.</span> <span class="toc-nav-text">&#x67E5;&#x8BE2;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF08;&#x52A0;&#x8F7D;&#xFF09;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#购物车模块"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">&#x8D2D;&#x7269;&#x8F66;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#购物车存储"><span class="toc-nav-number">2.4.1.</span> <span class="toc-nav-text">&#x8D2D;&#x7269;&#x8F66;&#x5B58;&#x50A8;&#xFF1A;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建相关类"><span class="toc-nav-number">2.4.2.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;&#x76F8;&#x5173;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#购物车的结构"><span class="toc-nav-number">2.4.2.1.</span> <span class="toc-nav-text">&#x8D2D;&#x7269;&#x8F66;&#x7684;&#x7ED3;&#x6784;&#xFF1A;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#添加购物车条目"><span class="toc-nav-number">2.4.2.2.</span> <span class="toc-nav-text">&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x6761;&#x76EE;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#清空条目"><span class="toc-nav-number">2.4.2.3.</span> <span class="toc-nav-text">&#x6E05;&#x7A7A;&#x6761;&#x76EE;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#删除购物车条目"><span class="toc-nav-number">2.4.2.4.</span> <span class="toc-nav-text">&#x5220;&#x9664;&#x8D2D;&#x7269;&#x8F66;&#x6761;&#x76EE;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建相关类"><span class="toc-nav-number">2.4.3.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;&#x76F8;&#x5173;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#易宝支付"><span class="toc-nav-number">2.4.3.1.</span> <span class="toc-nav-text">&#x6613;&#x5B9D;&#x652F;&#x4ED8;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#订单模块"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">&#x8BA2;&#x5355;&#x6A21;&#x5757;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#最后"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x6700;&#x540E;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#哈哈哈哈哈祝开心_"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x795D;&#x5F00;&#x5FC3;^_^</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#项目需求分析"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x9879;&#x76EE;&#x9700;&#x6C42;&#x5206;&#x6790;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#图书商城项目需求分析"><span class="toc-nav-number">1.0.1.</span> <span class="toc-nav-text">&#x56FE;&#x4E66;&#x5546;&#x57CE;&#x9879;&#x76EE;&#x9700;&#x6C42;&#x5206;&#x6790;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#数据库表"><span class="toc-nav-number">1.0.2.</span> <span class="toc-nav-text">&#x6570;&#x636E;&#x5E93;&#x8868;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#项目分析"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x9879;&#x76EE;&#x5206;&#x6790;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#项目类"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">&#x9879;&#x76EE;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用简单的mvc框架"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">&#x7528;&#x7B80;&#x5355;&#x7684;MVC&#x6846;&#x67B6;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#用户模块"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户模块的相关类创建"><span class="toc-nav-number">2.2.1.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6A21;&#x5757;&#x7684;&#x76F8;&#x5173;&#x7C7B;&#x521B;&#x5EFA;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户注册"><span class="toc-nav-number">2.2.2.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6CE8;&#x518C;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程jspsuserregistjsp-gt-userservletregistgt-msgjsp"><span class="toc-nav-number">2.2.2.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;&#xFF1A;/jsps/user/regist.jsp --&gt; UserServlet#regist()&#x2013;&gt; msg.jsp</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#页面jsp"><span class="toc-nav-number">2.2.2.1.1.</span> <span class="toc-nav-text">&#x9875;&#x9762;(jsp)&#xFF1A;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户激活"><span class="toc-nav-number">2.2.3.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x6FC0;&#x6D3B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.2.3.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户登录"><span class="toc-nav-number">2.2.4.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x767B;&#x5F55;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.2.4.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#用户退出"><span class="toc-nav-number">2.2.5.</span> <span class="toc-nav-text">&#x7528;&#x6237;&#x9000;&#x51FA;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.2.5.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#分类模块"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">&#x5206;&#x7C7B;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#分类模块的相关类创建"><span class="toc-nav-number">2.3.1.</span> <span class="toc-nav-text">&#x5206;&#x7C7B;&#x6A21;&#x5757;&#x7684;&#x76F8;&#x5173;&#x7C7B;&#x521B;&#x5EFA;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询所有分类"><span class="toc-nav-number">2.3.2.</span> <span class="toc-nav-text">&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x5206;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.3.2.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#图书模块"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">&#x56FE;&#x4E66;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建相关类"><span class="toc-nav-number">2.4.1.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;&#x76F8;&#x5173;&#x7C7B;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询所有图书"><span class="toc-nav-number">2.4.2.</span> <span class="toc-nav-text">&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x56FE;&#x4E66;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.4.2.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#按分类查询图书"><span class="toc-nav-number">2.4.3.</span> <span class="toc-nav-text">&#x6309;&#x5206;&#x7C7B;&#x67E5;&#x8BE2;&#x56FE;&#x4E66;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.4.3.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询详细信息加载"><span class="toc-nav-number">2.4.4.</span> <span class="toc-nav-text">&#x67E5;&#x8BE2;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF08;&#x52A0;&#x8F7D;&#xFF09;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程"><span class="toc-nav-number">2.4.4.1.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#购物车模块"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">&#x8D2D;&#x7269;&#x8F66;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#购物车存储"><span class="toc-nav-number">2.5.1.</span> <span class="toc-nav-text">&#x8D2D;&#x7269;&#x8F66;&#x5B58;&#x50A8;&#xFF1A;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建相关类"><span class="toc-nav-number">2.5.2.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;&#x76F8;&#x5173;&#x7C7B;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#购物车的结构"><span class="toc-nav-number">2.5.2.1.</span> <span class="toc-nav-text">&#x8D2D;&#x7269;&#x8F66;&#x7684;&#x7ED3;&#x6784;&#xFF1A;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#流程页面"><span class="toc-nav-number">2.5.2.2.</span> <span class="toc-nav-text">&#x6D41;&#x7A0B;&#x9875;&#x9762;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#添加购物车条目"><span class="toc-nav-number">2.5.2.3.</span> <span class="toc-nav-text">&#x6DFB;&#x52A0;&#x8D2D;&#x7269;&#x8F66;&#x6761;&#x76EE;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#清空条目"><span class="toc-nav-number">2.5.2.4.</span> <span class="toc-nav-text">&#x6E05;&#x7A7A;&#x6761;&#x76EE;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#删除购物车条目"><span class="toc-nav-number">2.5.2.5.</span> <span class="toc-nav-text">&#x5220;&#x9664;&#x8D2D;&#x7269;&#x8F66;&#x6761;&#x76EE;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#我的购物车"><span class="toc-nav-number">2.5.2.6.</span> <span class="toc-nav-text">&#x6211;&#x7684;&#x8D2D;&#x7269;&#x8F66;</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#订单模块"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">&#x8BA2;&#x5355;&#x6A21;&#x5757;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#创建相关类"><span class="toc-nav-number">2.6.1.</span> <span class="toc-nav-text">&#x521B;&#x5EFA;&#x76F8;&#x5173;&#x7C7B;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#生成订单"><span class="toc-nav-number">2.6.2.</span> <span class="toc-nav-text">&#x751F;&#x6210;&#x8BA2;&#x5355;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#我的订单按用户查"><span class="toc-nav-number">2.6.3.</span> <span class="toc-nav-text">&#x6211;&#x7684;&#x8BA2;&#x5355;&#xFF08;&#x6309;&#x7528;&#x6237;&#x67E5;&#xFF09;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#加载订单按id查"><span class="toc-nav-number">2.6.4.</span> <span class="toc-nav-text">&#x52A0;&#x8F7D;&#x8BA2;&#x5355;&#xFF08;&#x6309;id&#x67E5;&#xFF09;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#确认收货"><span class="toc-nav-number">2.6.5.</span> <span class="toc-nav-text">&#x786E;&#x8BA4;&#x6536;&#x8D27;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#支付"><span class="toc-nav-number">2.6.6.</span> <span class="toc-nav-text">&#x652F;&#x4ED8;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#易宝支付"><span class="toc-nav-number">2.6.6.1.</span> <span class="toc-nav-text">&#x6613;&#x5B9D;&#x652F;&#x4ED8;</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#易宝支付"><span class="toc-nav-number">2.6.6.2.</span> <span class="toc-nav-text">&#x6613;&#x5B9D;&#x652F;&#x4ED8;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#去银行"><span class="toc-nav-number">2.6.6.2.1.</span> <span class="toc-nav-text">&#x53BB;&#x94F6;&#x884C;</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#支付去银行"><span class="toc-nav-number">2.6.6.2.2.</span> <span class="toc-nav-text">&#x652F;&#x4ED8;&#xFF08;&#x53BB;&#x94F6;&#x884C;&#xFF09;</span></a></li><li class="toc-nav-item toc-nav-level-5"><a class="toc-nav-link" href="#支付银行回馈"><span class="toc-nav-number">2.6.6.2.3.</span> <span class="toc-nav-text">&#x652F;&#x4ED8;&#xFF08;&#x94F6;&#x884C;&#x56DE;&#x9988;&#xFF09;</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#后台"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x540E;&#x53F0;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#分类管理"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">&#x5206;&#x7C7B;&#x7BA1;&#x7406;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#相关类创建"><span class="toc-nav-number">3.1.1.</span> <span class="toc-nav-text">&#x76F8;&#x5173;&#x7C7B;&#x521B;&#x5EFA;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查看所有分类"><span class="toc-nav-number">3.1.2.</span> <span class="toc-nav-text">&#x67E5;&#x770B;&#x6240;&#x6709;&#x5206;&#x7C7B;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#添加分类"><span class="toc-nav-number">3.1.3.</span> <span class="toc-nav-text">&#x6DFB;&#x52A0;&#x5206;&#x7C7B;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除分类"><span class="toc-nav-number">3.1.4.</span> <span class="toc-nav-text">&#x5220;&#x9664;&#x5206;&#x7C7B;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#修改分类"><span class="toc-nav-number">3.1.5.</span> <span class="toc-nav-text">&#x4FEE;&#x6539;&#x5206;&#x7C7B;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#图书管理"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">&#x56FE;&#x4E66;&#x7BA1;&#x7406;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#相关类创建"><span class="toc-nav-number">3.2.1.</span> <span class="toc-nav-text">&#x76F8;&#x5173;&#x7C7B;&#x521B;&#x5EFA;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#查询所有图书"><span class="toc-nav-number">3.2.2.</span> <span class="toc-nav-text">&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x56FE;&#x4E66;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#加载图书"><span class="toc-nav-number">3.2.3.</span> <span class="toc-nav-text">&#x52A0;&#x8F7D;&#x56FE;&#x4E66;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#添加图书"><span class="toc-nav-number">3.2.4.</span> <span class="toc-nav-text">&#x6DFB;&#x52A0;&#x56FE;&#x4E66;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#删除图书"><span class="toc-nav-number">3.2.5.</span> <span class="toc-nav-text">&#x5220;&#x9664;&#x56FE;&#x4E66;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#编辑图书"><span class="toc-nav-number">3.2.6.</span> <span class="toc-nav-text">&#x7F16;&#x8F91;&#x56FE;&#x4E66;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#订单模块"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">&#x8BA2;&#x5355;&#x6A21;&#x5757;</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#最后"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">&#x6700;&#x540E;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#哈哈哈哈哈祝开心_"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#x54C8;&#xFF0C;&#x795D;&#x5F00;&#x5FC3;^_^</span></a></li></ol>
         
         </div>
       </aside>
@@ -766,12 +766,7 @@ Nucc 分享的javaweb项目。
                     <span style="display: inline-block; margin: 0 5px;">
                         <i class="fa fa-heart"></i>
                     </span> 
-                    re-Ported by <a href="http://www.huweihuang.com">胡伟煌</a> | 
-                    <iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="91px" height="20px"
-                        src="https://ghbtns.com/github-btn.html?user=huweihuang&repo=hexo-theme-huweihuang&type=star&count=true" >
-                    </iframe>
+                    re-Ported by <a href="http://th9876user.github.io/">Nucc</a> 
                 </p>
             </div>
         </div>
